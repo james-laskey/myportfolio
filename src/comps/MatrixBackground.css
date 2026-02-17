@@ -1,0 +1,96 @@
+.matrix-background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -2;
+  background: #0a0c0f;
+  overflow: hidden;
+  font-family: 'Courier New', monospace;
+}
+
+.matrix-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  max-width: 900px;
+  padding: 20px;
+  opacity: 0.25;
+  pointer-events: none;
+  max-height: 90vh;
+  overflow-y: hidden;
+}
+
+.matrix-line {
+  color: #00ff9d;
+  font-size: 14px;
+  line-height: 1.6;
+  white-space: pre;
+  font-family: 'Courier New', monospace;
+  text-shadow: 0 0 8px #00ff9d;
+  border-left: 2px solid rgba(0, 255, 157, 0.15);
+  padding-left: 15px;
+  margin-bottom: 4px;
+  transition: opacity 0.3s ease;
+}
+
+.line-number {
+  display: inline-block;
+  width: 35px;
+  color: rgba(0, 255, 157, 0.4);
+  margin-right: 15px;
+  user-select: none;
+  font-size: 12px;
+}
+
+.line-content {
+  display: inline-block;
+  color: rgba(0, 255, 157, 0.9);
+}
+
+.cursor {
+  animation: blink 1s infinite;
+  margin-left: 5px;
+  color: #00ff9d;
+  font-weight: bold;
+}
+
+@keyframes blink {
+  0%, 50% { opacity: 1; }
+  51%, 100% { opacity: 0; }
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .matrix-line {
+    font-size: 10px;
+    line-height: 1.4;
+    padding-left: 8px;
+  }
+  
+  .matrix-container {
+    opacity: 0.15;
+    max-width: 100%;
+    padding: 10px;
+  }
+  
+  .line-number {
+    width: 25px;
+    font-size: 9px;
+    margin-right: 8px;
+  }
+}
+
+@media (max-width: 480px) {
+  .matrix-line {
+    font-size: 8px;
+    line-height: 1.3;
+  }
+  
+  .matrix-container {
+    opacity: 0.1;
+  }
+}
