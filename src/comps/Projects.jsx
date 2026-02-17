@@ -1,43 +1,19 @@
 import React from 'react';
 import './SectionStyles.css';
+import openproject from './openproject.jpg'
 
 function Projects() {
   const projects = [
     {
       id: 1,
-      image: '/images/carbon2null.jpg', // Placeholder
+      image: openproject, // Placeholder
       title: 'AI Agent for Carbon2Null',
       timeline: 'Spring 2025',
       description: 'SWE Technical Lead @ Open Project Berkeley. Developed an AI agent to generate, cross-reference, and export BOMs (Bill of Materials) for hundreds of commercial medical devices.',
       repo: '[Project Repo Link]',
       alt: 'Carbon2Null project'
     },
-    {
-      id: 2,
-      image: '/images/geojson.jpg', // Placeholder
-      title: 'Geojson Webapp/API for Badger Maps',
-      timeline: 'Fall 2016',
-      description: 'Developed a webapp/api to increase traffic and improve SEO by accumulating geojson data of the boroughs of New York.',
-      alt: 'Geojson mapping project'
-    },
-    {
-      id: 3,
-      image: '/images/salesforce-widget.jpg', // Placeholder
-      title: 'Active Targeting Language Widget',
-      timeline: 'Summer 2018',
-      description: 'Engineered an Active Targeting Language Widget for Salesforce Social Cloud Platform using Backbone.js, PHP, CSS, and jQuery.',
-      demo: 'https://tinyurl.com/salesforce-summer-2018',
-      alt: 'Salesforce widget'
-    },
-    {
-      id: 4,
-      image: '/images/aura-component.jpg', // Placeholder
-      title: 'Salesforce Aura Component',
-      timeline: 'Summer 2017',
-      description: 'Engineered a new Aura component displaying the Engagement History of Campaigns. Utilized Java, SQL queries, and JavaScript for data transfer to Salesforce servers.',
-      demo: 'https://tinyurl.com/salesforce-summer-2017',
-      alt: 'Salesforce Aura component'
-    }
+    
   ];
 
   return (

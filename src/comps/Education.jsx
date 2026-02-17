@@ -1,19 +1,21 @@
 import React from 'react';
 import './SectionStyles.css';
+import berkeley from './berkeley.png'
+import foothill from './foothill.jpg'
 
 function Education() {
   const educationEntries = [
     {
       id: 1,
-      image: '/images/berkeley.jpg', // Placeholder
+      image: berkeley, // Placeholder
       title: 'UC Berkeley - Cognitive/Computer Science',
       timeline: '2026 (Expected)',
-      description: 'Pursuing degree in Cognitive Science and Computer Science. SWE Technical Lead @ Open Project Berkeley Spring \'25.',
+      description: 'Pursuing degree in Cognitive Science and Computer Science. I started at 18 years old straight out of high school in 2015. I come from san Bernardino, Ca and our educational system isnt the best out there. Hence, it took me time to adjust to the rigor of UC Berkeley. Computer Science at Cal is no joke but I perseveared. Through my internships and personal experience I chose to take time aay from Uc Berkeley and take my chances at a full time job. At the time everyone said you did not need a degree to get a tech job so I took the risk. It took over a year to get my first offer but I was successful. I was then laid off right before ChatGPT was released in 2022 which is pretty ironic. I then thought the best decision was to return to Cal. They did not make it wasy for me. I spent a year at two community colleges taking 20+ units a semester to fulfill requirements for Cal. I am now on track to graduate and used my veteran experience to create novel and efficient solutions in this world.',
       alt: 'UC Berkeley'
     },
     {
       id: 2,
-      image: '/images/foothill.jpg', // Placeholder
+      image: foothill, // Placeholder
       title: 'Foothill/Alameda College',
       timeline: '2023',
       description: 'Completed undergraduate requirements for UC Berkeley readmission.',
@@ -63,7 +65,7 @@ function Education() {
         {/* Courses Section as additional cards */}
         <div className="entry-card image-left">
           <div className="entry-image">
-            <img src="/images/courses.jpg" alt="Computer Science Courses" /> {/* Placeholder */}
+            <img src={berkeley} alt="Computer Science Courses" /> {/* Placeholder */}
           </div>
           <div className="entry-content">
             <h3 className="entry-title">Computer Science Courses</h3>
@@ -77,7 +79,7 @@ function Education() {
         
         <div className="entry-card image-right">
           <div className="entry-image">
-            <img src="/images/math.jpg" alt="Mathematics Courses" /> {/* Placeholder */}
+            <img src={berkeley} alt="Mathematics Courses" /> {/* Placeholder */}
           </div>
           <div className="entry-content">
             <h3 className="entry-title">Mathematics Courses</h3>
