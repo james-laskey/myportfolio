@@ -12,7 +12,7 @@ function Work() {
       image: everstream, // Placeholder
       title: 'Associate Software Developer @ Everstream Analytics',
       timeline: 'Apr 2022 - Nov 2022 (Remote)',
-      description: 'Contributed to full-stack solutions using Backbone.js, Django, React.js, Auth0, and Mixpanel. Operated within a KANBAN routine, prioritizing work based on company goals.',
+      description: 'Contributed to full-stack solutions using Backbone.js, Django, React.js, Auth0, and Mixpanel. Operated within a KANBAN routine, prioritizing work based on company goals. This was my first full time job as a Software Engineer and at a mid size company. The expectations and regulations on code production were not as strict as Salesforce but there was an established production pipeline. I worked entirely remote and completed ever single ticket/task I was assigned. I was laid off due to the company outsourcing to India at the time.',
       alt: 'Everstream Analytics'
     },
     {
